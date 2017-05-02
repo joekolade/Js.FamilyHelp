@@ -1,0 +1,30 @@
+
+// Variables
+//
+
+$fh-blue: #009cdf;
+$fh-green: #91b337;
+$black: #333;
+
+$brand-primary: $fh-green;
+$body-color: $fh-blue;
+
+$enable-rounded: false;
+
+
+// Navbar
+
+// $navbar-brand-padding-y:            .25rem !default;
+
+// $navbar-toggler-padding-x:           .75rem !default;
+// $navbar-toggler-padding-y:           .25rem !default;
+// $navbar-toggler-font-size:           $font-size-lg !default;
+// $navbar-toggler-border-radius:       $btn-border-radius !default;
+
+$navbar-light-color:                $fh-blue;
+$navbar-light-hover-color:          $fh-green;
+$navbar-light-active-color:         $fh-green;
+$navbar-light-toggler-border:       $fh-blue;
+
+$navbar-border-style: dotted;
+$navbar-border-width: 0.15rem;

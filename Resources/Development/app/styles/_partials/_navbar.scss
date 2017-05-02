@@ -1,0 +1,30 @@
+
+// Navbar
+//
+
+.navbar {
+
+
+  .dropdown-menu {
+    border: $navbar-border-width $navbar-border-style  $fh-blue;
+    top: 82%;
+  }
+
+
+  @include media-breakpoint-up(lg) {
+    top: 28px;
+
+    .navbar-nav > li > a {
+      border: $navbar-border-style transparent;
+      border-width: $navbar-border-width $navbar-border-width 0 $navbar-border-width;
+      margin-left: $navbar-border-width;
+
+
+      &.active {
+        background: $white;
+        border-radius: .5em .5em 0 0;
+        border-color: $fh-blue;
+      }
+    }
+  }
+}

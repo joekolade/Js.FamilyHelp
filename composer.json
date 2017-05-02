@@ -1,0 +1,22 @@
+{
+    "description": "",
+    "type": "neos-site",
+    "require": {
+        "neos/neos": "*",
+        "neos/nodetypes": "*"
+    },
+    "suggest": {
+        "neos/seo": "*"
+    },
+    "name": "js/familyhelp",
+    "autoload": {
+        "psr-4": {
+            "Js\\FamilyHelp\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Js.FamilyHelp"
+        }
+    }
+}

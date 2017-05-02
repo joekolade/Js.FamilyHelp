@@ -1,0 +1,21 @@
+
+// _header.scss
+//
+
+.header {
+  padding-bottom: 3rem;
+  margin-bottom: 1rem;
+  border-bottom: $navbar-border-width $navbar-border-style $fh-blue;
+}
+
+@include media-breakpoint-up(sm) {
+
+  .header {
+    //padding-bottom: 1rem;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .header {
+    padding-bottom: .5rem;
+  }
+}
