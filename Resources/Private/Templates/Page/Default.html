@@ -3,24 +3,101 @@
 {namespace fusion=Neos\Fusion\ViewHelpers}
 <html>
 <head>
-	<f:section name="stylesheets">
-		<!-- Put your stylesheet inclusions here, they will be included in your website by Fusion -->
-	</f:section>
-	<f:section name="headScripts">
-		<!-- Put your scripts inclusions for the head here, they will be included in your website by Fusion -->
-	</f:section>
+    <f:section name="stylesheets">
+        <link rel="stylesheet" href="{f:uri.resource(path: 'Styles/main.css', package: 'Js.FamilyHelp')}">
+    </f:section>
+    <f:section name="headScripts">
+        <script src="{f:uri.resource(path: 'JavaScript/vendor/modernizr.js', package: 'Js.FamilyHelp')}"></script>
+    </f:section>
 </head>
 <body>
 <f:section name="body">
-	<nav class="menu">
-		{parts.menu -> f:format.raw()}
-	</nav>
-	<div class="content">
-		{content.main -> f:format.raw()}
-	</div>
+    <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+        your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+
+    <div class="container">
+        <div class="row header">
+            <div class="col col-12 col-sm-5 col-lg-3">
+                <a href="#">
+                    <img src="{f:uri.resource(path: 'Images/family_help_Skala.jpg', package: 'Js.FamilyHelp')}" class="img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col col-12 col-lg-9">
+                <nav class="navbar navbar-toggleable-md navbar-light">
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Zweck des Vereins</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Projekte
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">baby hilfe</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#">Vorstand</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#">Vereinsentstehung</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#">Kontakt</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#">Spenden</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-lg-8 offset-sm-2 offset-lg-3">
+                <h4>HTML5 Boilerplate</h4>
+                <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps
+                    or sites.</p>
+                <h4>Sass</h4>
+                <p>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
+                <h4>Bootstrap</h4>
+                <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web
+                    development.</p>
+                <h4>Modernizr</h4>
+                <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and
+                    CSS3-powered websites.</p>
+            </div>
+        </div>
+        <div class="footer">
+            Footer
+        </div>
+    </div>
+
+    <nav class="menu">
+        {parts.menu -> f:format.raw()}
+    </nav>
+    <div class="content">
+        {content.main -> f:format.raw()}
+    </div>
 </f:section>
 <f:section name="bodyScripts">
-	<!-- Put your scripts inclusions for the end of the body here, they will be included in your website by Fusion -->
+    <script src="{f:uri.resource(path: 'JavaScript/vendor.js', package: 'Js.FamilyHelp')}"></script>
+    <script src="{f:uri.resource(path: 'JavaScript/plugins.js', package: 'Js.FamilyHelp')}"></script>
+    <script src="{f:uri.resource(path: 'JavaScript/main.js', package: 'Js.FamilyHelp')}"></script>
 </f:section>
 </body>
 </html>

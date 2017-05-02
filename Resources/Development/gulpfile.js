@@ -183,7 +183,14 @@ gulp.task('neosCopyJs', () => {
         dot: true
     }).pipe(gulp.dest('../Public/JavaScript'));
 });
-gulp.task('neos', ['neosCopyStyles'], () => {
+gulp.task('neosCopyImages', () => {
+    return gulp.src([
+        'dist/images/**/*'
+    ], {
+        dot: true
+    }).pipe(gulp.dest('../Public/Images'));
+});
+gulp.task('neos', ['neosCopyStyles', 'neosCopyImages'], () => {
     gulp.start('neosCopyJs');
 });
 
