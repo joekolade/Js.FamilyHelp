@@ -190,7 +190,14 @@ gulp.task('neosCopyImages', () => {
         dot: true
     }).pipe(gulp.dest('../Public/Images'));
 });
-gulp.task('neos', ['neosCopyStyles', 'neosCopyImages'], () => {
+gulp.task('neosCopyFonts', () => {
+    return gulp.src([
+        'app/fonts/**/*'
+    ], {
+        dot: true
+    }).pipe(gulp.dest('../Public/fonts'));
+});
+gulp.task('neos', ['neosCopyStyles', 'neosCopyImages', 'neosCopyFonts'], () => {
     gulp.start('neosCopyJs');
 });
 
