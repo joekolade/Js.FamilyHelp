@@ -1,0 +1,33 @@
+{namespace neos=Neos\Neos\ViewHelpers}
+{namespace ts=Neos\Fusion\ViewHelpers}
+<ul{attributes -> f:format.raw()}>
+<f:render section="itemsList" arguments="{items: items}" />
+</ul>
+
+<f:section name="itemsList">
+    <f:for each="{items}" as="item">
+        <f:if condition="{item.subItems}">
+            <f:then>
+                <li class="dropdown {item.state}">
+                    <neos:link.node node="{item.node}" class="{item.state} nav-link dropdown-toggle" id="navbarDropdownMenuLink" data="{toggle: 'dropdown'}" />
+                            <f:render section="itemsSubList" arguments="{items: item.subItems}" />
+                </li>
+            </f:then>
+            <f:else>
+                <li{ts:render(path: '{item.state}.attributes', context: {item: item}) -> f:format.raw()}>
+                <neos:link.node node="{item.node}" class="nav-link {ts:render(path: '{item.state}.attributes.class', context: {item: item}) -> f:format.raw()}" />
+                <f:render section="itemsSubList" arguments="{items: item.subItems}" />
+                </li>
+            </f:else>
+        </f:if>
+    </f:for>
+</f:section>
+
+<f:section name="itemsSubList">
+    <f:for each="{items}" as="item">
+        <div class="dropdown-menu">
+            <neos:link.node node="{item.node}" class="nav-link" />
+        </div>
+
+    </f:for>
+</f:section>

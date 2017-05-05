@@ -33,6 +33,10 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+                        {parts.menu -> f:format.raw()}
+                        <!--
                         <ul class="navbar-nav">
                             <li class="">
                                 <a class="nav-link active" href="#">Zweck des Vereins</a>
@@ -61,6 +65,7 @@
                                 <a class="nav-link" href="#">Spenden</a>
                             </li>
                         </ul>
+                        -->
                     </div>
                 </nav>
             </div>
@@ -87,9 +92,6 @@
         </div>
     </div>
 
-    <nav class="menu">
-        {parts.menu -> f:format.raw()}
-    </nav>
     <div class="content">
         {content.main -> f:format.raw()}
     </div>
