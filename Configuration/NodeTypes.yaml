@@ -6,3 +6,27 @@
 #  childNodes:
 #    'sidebar':
 #      type: 'Neos.Neos:ContentCollection'
+
+
+'Neos.NodeTypes:Page':
+  properties:
+    backgroundimage:
+      type: 'Neos\Media\Domain\Model\ImageInterface'
+      ui:
+        label: 'Hintergrund Bild'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'document'
+          editorOptions:
+            features:
+              crop: TRUE
+              resize: TRUE
+
+'Js.NodeTypes:Startpage':
+  superTypes:
+    'Neos.NodeTypes:Page': TRUE
+  ui:
+    label: 'Homepage'
+  childNodes:
+    'footer':
+      type: 'Neos.Neos:ContentCollection'

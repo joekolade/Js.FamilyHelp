@@ -1,7 +1,26 @@
 /**
  * Root Fusion template for the family help site
  */
-page = Neos.Neos:Page {
+
+
+root {
+    default {
+        type = ${q(node).property('_nodeType') + '.Document'}
+        renderPath >
+    }
+}
+
+prototype(Neos.NodeTypes:Page.Document) >
+prototype(Neos.NodeTypes:Page.Document) < prototype(Neos.Neos:Page) {
+
+    @context.imageUri = Neos.Neos:ImageUri {
+        asset = ${q(node).property('backgroundimage')}
+    }
+    bodyTag {
+        attributes.style.@process.backgroundImage = ${value + ' ' + 'background-image: url(' + imageUri + ');'}
+        attributes.style.@process.backgroundImage.@if.backgroundImageIsSet = ${ q(node).property('backgroundimage') == '' ? false : true }
+    }
+
     head {
         stylesheets.site = Neos.Fusion:Template {
             templatePath = 'resource://Js.FamilyHelp/Private/Templates/Page/Default.html'
@@ -46,9 +65,16 @@ page = Neos.Neos:Page {
             }
         }
 
+        footer = Neos.Neos:ContentCollection {
+            nodePath = ${q(site).find('footer').property('_path')}
+            collection = ${q(site).children('footer').children()}
+        }
+
         javascripts.site = Neos.Fusion:Template {
             templatePath = 'resource://Js.FamilyHelp/Private/Templates/Page/Default.html'
             sectionName = 'bodyScripts'
         }
     }
 }
+
+prototype(Js.NodeTypes:Startpage.Document) < prototype(Neos.NodeTypes:Page.Document)
