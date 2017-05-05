@@ -1,22 +1,24 @@
 {namespace neos=Neos\Neos\ViewHelpers}
 {namespace ts=Neos\Fusion\ViewHelpers}
 <ul{attributes -> f:format.raw()}>
-<f:render section="itemsList" arguments="{items: items}" />
+<f:render section="itemsList" arguments="{items: items}"/>
 </ul>
 
 <f:section name="itemsList">
-    <f:for each="{items}" as="item">
+    <f:for each="{items}" as="item" iteration="i">
         <f:if condition="{item.subItems}">
             <f:then>
                 <li class="dropdown {item.state}">
-                    <neos:link.node node="{item.node}" class="{item.state} nav-link dropdown-toggle" id="navbarDropdownMenuLink" data="{toggle: 'dropdown'}" />
-                            <f:render section="itemsSubList" arguments="{items: item.subItems}" />
+                    <neos:link.node node="{item.node}" class="{item.state} nav-link dropdown-toggle"
+                                    id="navbarDropdownMenuLink{i.cycle}" data="{toggle: 'dropdown'}"/>
+                    <f:render section="itemsSubList" arguments="{items: item.subItems, j: '{i.cycle}'}"/>
                 </li>
             </f:then>
             <f:else>
-                <li{ts:render(path: '{item.state}.attributes', context: {item: item}) -> f:format.raw()}>
-                <neos:link.node node="{item.node}" class="nav-link {ts:render(path: '{item.state}.attributes.class', context: {item: item}) -> f:format.raw()}" />
-                <f:render section="itemsSubList" arguments="{items: item.subItems}" />
+                <li
+                {ts:render(path: '{item.state}.attributes', context: {item: item}) -> f:format.raw()}>
+                <neos:link.node node="{item.node}"
+                                class="nav-link {ts:render(path: '{item.state}.attributes.class', context: {item: item}) -> f:format.raw()}"/>
                 </li>
             </f:else>
         </f:if>
@@ -24,10 +26,10 @@
 </f:section>
 
 <f:section name="itemsSubList">
-    <f:for each="{items}" as="item">
-        <div class="dropdown-menu">
-            <neos:link.node node="{item.node}" class="nav-link" />
-        </div>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink{j}">
+        <f:for each="{items}" as="item">
+            <neos:link.node node="{item.node}" class="nav-link"/>
 
-    </f:for>
+        </f:for>
+    </div>
 </f:section>
