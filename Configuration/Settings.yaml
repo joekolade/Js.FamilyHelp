@@ -5,9 +5,8 @@ Neos:
         localWebDirectoryPersistentResourcesTarget:
           target: 'Neos\Flow\ResourceManagement\Target\FileSystemSymlinkTarget'
           targetOptions:
-            relativeSymlinks: TRUE
-            subdivideHashPathSegment: TRUE
+            relativeSymlinks: true
         localWebDirectoryStaticResourcesTarget:
           target: 'Neos\Flow\ResourceManagement\Target\FileSystemSymlinkTarget'
           targetOptions:
-            relativeSymlinks: TRUE
+            relativeSymlinks: true

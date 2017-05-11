@@ -2,28 +2,256 @@
 <root>
  <site name="family help" state="1" siteResourcesPackageKey="Js.FamilyHelp" siteNodeName="familyhelp">
   <nodes formatVersion="2.0">
-   <node nodeName="familyhelp">
-    <variant workspace="live" nodeType="Neos.NodeTypes:Page" sortingIndex="100" version="1" removed="" hidden="" hiddenInIndex="">
+   <node identifier="d0d72388-a89d-4370-8495-78cc8262d551" nodeName="familyhelp">
+    <variant sortingIndex="100" workspace="live" nodeType="Neos.NodeTypes:Page" version="1" removed="" hidden="" hiddenInIndex="">
      <dimensions>
-     
       <language>en_US</language>
-     
      </dimensions>
      <accessRoles __type="array"/>
+     <creationDateTime __type="object" __classname="DateTime">2017-05-02T22:59:55+02:00</creationDateTime>
+     <lastModificationDateTime __type="object" __classname="DateTime">2017-05-02T22:59:55+02:00</lastModificationDateTime>
      <properties>
       <title __type="string">Home</title>
       <uriPathSegment __type="string">home</uriPathSegment>
      </properties>
     </variant>
-    <node nodeName="main">
-     <variant workspace="live" nodeType="Neos.Neos:ContentCollection" sortingIndex="100" version="1" removed="" hidden="" hiddenInIndex="">
+    <variant sortingIndex="100" workspace="live" nodeType="Js.NodeTypes:Startpage" version="4" removed="" hidden="" hiddenInIndex="">
+     <dimensions/>
+     <accessRoles __type="array"/>
+     <creationDateTime __type="object" __classname="DateTime">2017-05-05T23:53:05+02:00</creationDateTime>
+     <lastModificationDateTime __type="object" __classname="DateTime">2017-05-05T23:57:59+02:00</lastModificationDateTime>
+     <lastPublicationDateTime __type="object" __classname="DateTime">2017-05-05T23:57:58+02:00</lastPublicationDateTime>
+     <properties>
+      <title __type="string">Home</title>
+      <uriPathSegment __type="string">home</uriPathSegment>
+      <canonicalLink __type="string"></canonicalLink>
+      <backgroundimage __type="string"></backgroundimage>
+     </properties>
+    </variant>
+    <node identifier="f4ba8593-a3c3-4582-a6f6-380d918583a4" nodeName="footer">
+     <variant sortingIndex="650" workspace="live" nodeType="Neos.Neos:ContentCollection" version="4" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2017-05-05T23:53:05+02:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2017-05-05T23:57:59+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2017-05-05T23:57:58+02:00</lastPublicationDateTime>
+      <properties/>
+     </variant>
+     <node identifier="723e0498-5e6d-4f6d-9495-549a44c1b3fe" nodeName="node-ky9f9xypr9hhn">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.NodeTypes:Text" version="7" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2017-05-05T23:54:02+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2017-05-05T23:54:16+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2017-05-05T23:54:16+02:00</lastPublicationDateTime>
+       <properties>
+        <text __type="string">&lt;p&gt;Footer - was soll hier eigentlich hin?&lt;/p&gt;</text>
+       </properties>
+      </variant>
+     </node>
+    </node>
+    <node identifier="3f6139e4-d3c9-466d-90bb-f70adc16eb4a" nodeName="main">
+     <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="1" removed="" hidden="" hiddenInIndex="">
       <dimensions>
-      
        <language>en_US</language>
-      
       </dimensions>
       <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2017-05-02T22:59:55+02:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2017-05-02T22:59:55+02:00</lastModificationDateTime>
+      <properties/>
      </variant>
+     <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="4" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2017-05-05T23:53:05+02:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2017-05-05T23:57:59+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2017-05-05T23:57:58+02:00</lastPublicationDateTime>
+      <properties/>
+     </variant>
+     <node identifier="9fd197c4-d75d-4b76-bbd3-e37a4519a870" nodeName="node-cp48sbdoy56iw">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.NodeTypes:Text" version="29" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2017-05-05T23:42:39+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2017-05-05T23:44:17+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2017-05-05T23:44:17+02:00</lastPublicationDateTime>
+       <properties>
+        <text __type="string">&lt;h2&gt;HTML5 Boilerplate&lt;/h2&gt;&lt;p&gt;HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps&lt;br/&gt;    or sites.&lt;/p&gt;&lt;h3&gt;Sass&lt;/h3&gt;&lt;p&gt;Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.&lt;/p&gt;&lt;h3&gt;Bootstrap&lt;/h3&gt;&lt;p&gt;Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web&lt;br/&gt;    development.&lt;/p&gt;&lt;h3&gt;Modernizr&lt;/h3&gt;&lt;p&gt;Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and&lt;br/&gt;    CSS3-powered websites.&lt;/p&gt;</text>
+       </properties>
+      </variant>
+     </node>
+    </node>
+    <node identifier="c5cfa729-c4c3-4d17-af9c-5f6484f277c8" nodeName="node-dsbxfrdkcw0vs">
+     <variant sortingIndex="550" workspace="live" nodeType="Neos.Neos:Shortcut" version="3" removed="" hidden="" hiddenInIndex="1">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2017-05-02T23:38:25+02:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2017-05-05T22:34:53+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2017-05-05T22:34:53+02:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">service</uriPathSegment>
+       <targetMode __type="string">firstChildNode</targetMode>
+       <title __type="string">Service</title>
+      </properties>
+     </variant>
+    </node>
+    <node identifier="8952d498-bb55-4288-824f-31ba7bb265a7" nodeName="node-ietz1xf1lbg9m">
+     <variant sortingIndex="200" workspace="live" nodeType="Neos.NodeTypes:Page" version="2" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2017-05-02T23:37:25+02:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2017-05-02T23:38:41+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2017-05-02T23:38:41+02:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">zweck-des-vereins</uriPathSegment>
+       <canonicalLink __type="string"></canonicalLink>
+       <title __type="string">Zweck des Vereins</title>
+      </properties>
+     </variant>
+     <node identifier="3144c3a1-ed94-1bcc-d668-3ab9f0f2ea87" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2017-05-02T23:37:25+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2017-05-02T23:38:41+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2017-05-02T23:38:41+02:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+    </node>
+    <node identifier="f70c2bb0-afce-4101-93f1-c6259ee4dd04" nodeName="node-l9mlctpvuac4u">
+     <variant sortingIndex="400" workspace="live" nodeType="Neos.NodeTypes:Page" version="3" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2017-05-02T23:37:57+02:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2017-05-02T23:38:41+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2017-05-02T23:38:41+02:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">kontakt</uriPathSegment>
+       <canonicalLink __type="string"></canonicalLink>
+       <title __type="string">Kontakt</title>
+      </properties>
+     </variant>
+     <node identifier="a7945a1e-368f-e5db-e110-8b6dd04a99a5" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2017-05-02T23:37:57+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2017-05-02T23:38:41+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2017-05-02T23:38:41+02:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+    </node>
+    <node identifier="56110aa7-a35b-475f-9872-0770c5da17a5" nodeName="node-nys0e72juvpwb">
+     <variant sortingIndex="450" workspace="live" nodeType="Neos.NodeTypes:Page" version="3" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2017-05-02T23:38:06+02:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2017-05-02T23:38:41+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2017-05-02T23:38:41+02:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">spenden</uriPathSegment>
+       <canonicalLink __type="string"></canonicalLink>
+       <title __type="string">Spenden</title>
+      </properties>
+     </variant>
+     <node identifier="7ed57409-8782-2eb7-eb09-3baf90c88f1a" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2017-05-02T23:38:06+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2017-05-02T23:38:41+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2017-05-02T23:38:41+02:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+    </node>
+    <node identifier="37f379a2-25d4-487b-8388-152af3cab0f0" nodeName="node-of9s5w3qnfcyu">
+     <variant sortingIndex="300" workspace="live" nodeType="Neos.NodeTypes:Page" version="3" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2017-05-02T23:37:42+02:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2017-05-02T23:38:41+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2017-05-02T23:38:41+02:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">vorstand</uriPathSegment>
+       <canonicalLink __type="string"></canonicalLink>
+       <title __type="string">Vorstand</title>
+      </properties>
+     </variant>
+     <node identifier="a49fbadd-2b95-0100-62d6-c0b18966470b" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2017-05-02T23:37:42+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2017-05-02T23:38:41+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2017-05-02T23:38:41+02:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+    </node>
+    <node identifier="d838a131-c469-4c74-b74d-11e67f2649a2" nodeName="node-old3g1emp5xg6">
+     <variant sortingIndex="350" workspace="live" nodeType="Neos.NodeTypes:Page" version="3" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2017-05-02T23:37:50+02:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2017-05-02T23:38:41+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2017-05-02T23:38:41+02:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">vereinsentstehung</uriPathSegment>
+       <canonicalLink __type="string"></canonicalLink>
+       <title __type="string">Vereinsentstehung</title>
+      </properties>
+     </variant>
+     <node identifier="df50404e-deb4-2398-1774-f52710d30b38" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2017-05-02T23:37:50+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2017-05-02T23:38:41+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2017-05-02T23:38:41+02:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+    </node>
+    <node identifier="d8cf0de8-e7db-4576-b78e-ff1144873a9e" nodeName="node-x0bo2r9rop81i">
+     <variant sortingIndex="250" workspace="live" nodeType="Neos.Neos:Shortcut" version="4" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2017-05-02T23:37:36+02:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2017-05-02T23:38:41+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2017-05-02T23:38:41+02:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">projekte</uriPathSegment>
+       <title __type="string">Projekte</title>
+       <targetMode __type="string">firstChildNode</targetMode>
+      </properties>
+     </variant>
+     <node identifier="deea775a-5395-46e5-892b-c27b2b40b4f6" nodeName="node-07ytum2i0bh95">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.NodeTypes:Page" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2017-05-02T23:39:03+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2017-05-02T23:39:06+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2017-05-02T23:39:05+02:00</lastPublicationDateTime>
+       <properties>
+        <uriPathSegment __type="string">baby-hilfe</uriPathSegment>
+        <canonicalLink __type="string"></canonicalLink>
+        <title __type="string">baby hilfe</title>
+       </properties>
+      </variant>
+      <node identifier="d97c7f5e-ada5-ba5c-8998-dcad079432dc" nodeName="main">
+       <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2017-05-02T23:39:03+02:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2017-05-02T23:39:06+02:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2017-05-02T23:39:05+02:00</lastPublicationDateTime>
+        <properties/>
+       </variant>
+      </node>
+     </node>
     </node>
    </node>
   </nodes>
