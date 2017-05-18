@@ -40,6 +40,8 @@ prototype(Neos.NodeTypes:Page.Document) < prototype(Neos.Neos:Page) {
             menu = Neos.Neos:Menu {
                 templatePath = 'resource://Js.FamilyHelp/Private/Templates/FusionObjects/Menu.html'
 
+                maximumLevels = 1
+
                 # Ul class
                 attributes = Neos.Fusion:Attributes {
                     class = 'navbar-nav'
