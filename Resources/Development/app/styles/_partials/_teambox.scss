@@ -1,0 +1,24 @@
+.teambox {
+  figure img {
+    float: left;
+    width: 21.588%;
+    height: auto;
+    padding-top: 0.25em;
+  }
+  figure + div {
+    float: right;
+    width: 72%;
+
+    h2 {
+      margin: 0;
+    }
+
+    p + p {
+      margin: 0.66em 0;
+    }
+  }
+  &.neos-contentelement {
+    clear: both;
+    overflow: auto;
+  }
+}
