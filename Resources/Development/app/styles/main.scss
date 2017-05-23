@@ -3,6 +3,9 @@
 $font-family-base: 'futura-pt';
 $font-family-sans-serif: 'futura-pt';
 
+$special-font-family: 'JuliusPrimaryStd-Bold';
+//$font-family-sans-serif: 'JuliusPrimaryStd-Bold';
+
 // bower:scss
 @import "bower_components/bootstrap/scss/bootstrap.scss";
 // endbower
@@ -73,9 +76,11 @@ body {
 }
 
 @import "_partials/futura";
+@import "_partials/juliusprimary";
 @import "_partials/header";
 @import "_partials/navbar";
 @import "_partials/content";
+@import "_partials/footer";
 @import "_partials/splash";
 @import "_partials/teambox";
 @import "_partials/responsive_images";

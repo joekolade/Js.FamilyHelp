@@ -5,6 +5,8 @@ h1.js-familyhelp-splash {
   margin-bottom: 1.5em;
   font-weight: normal;
 
+  font-family: $special-font-family;
+
   @include media-breakpoint-up(lg) {
     max-width: 70%;
   }
