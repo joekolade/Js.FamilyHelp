@@ -82,6 +82,6 @@ prototype(Neos.NodeTypes:Page.Document) < prototype(Neos.Neos:Page) {
 prototype(Js.NodeTypes:Startpage.Document) < prototype(Neos.NodeTypes:Page.Document)
 
 prototype(Neos.NodeTypes:Image) {
-    #templatePath = 'resource://Js.FamilyHelp/Private/Templates/NodeTypes/Image.html'
+    templatePath = 'resource://Js.FamilyHelp/Private/Templates/NodeTypes/Image.html'
     #imageClassName = ${q(node).property('alignment') ? ('img-respionsive typo3-neos-alignment-' + q(node).property('alignment')) : 'img-responsive'}
 }
