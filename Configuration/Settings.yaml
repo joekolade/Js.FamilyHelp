@@ -10,3 +10,18 @@ Neos:
           target: 'Neos\Flow\ResourceManagement\Target\FileSystemSymlinkTarget'
           targetOptions:
             relativeSymlinks: true
+Neos:
+  Media:
+    thumbnailPresets:
+      'Vendor.Site:presetLg':
+        maximumWidth: 1200
+        maximumHeight: 800
+      'Vendor.Site:presetSm':
+        maximumWidth: 940
+        maximumHeight: 627
+      'Vendor.Site:presetXs':
+        maximumWidth: 720
+        maximumHeight: 480
+      'Vendor.Site:presetXxs':
+        maximumWidth: 450
+        maximumHeight: 300
