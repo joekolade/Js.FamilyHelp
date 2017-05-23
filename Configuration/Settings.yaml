@@ -13,15 +13,15 @@ Neos:
 Neos:
   Media:
     thumbnailPresets:
-      'Vendor.Site:presetLg':
+      'Js.FamilyHelp:presetLg':
         maximumWidth: 1200
         maximumHeight: 800
-      'Vendor.Site:presetSm':
+      'Js.FamilyHelp:presetSm':
         maximumWidth: 940
         maximumHeight: 627
-      'Vendor.Site:presetXs':
+      'Js.FamilyHelp:presetXs':
         maximumWidth: 720
         maximumHeight: 480
-      'Vendor.Site:presetXxs':
+      'Js.FamilyHelp:presetXxs':
         maximumWidth: 450
         maximumHeight: 300
