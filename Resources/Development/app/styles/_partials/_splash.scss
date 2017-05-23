@@ -3,4 +3,9 @@ h1.js-familyhelp-splash {
   font-size: 2em;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
+
+
+  @media (min-width: 48em) {
+    max-width: 70%;
+  }
 }
