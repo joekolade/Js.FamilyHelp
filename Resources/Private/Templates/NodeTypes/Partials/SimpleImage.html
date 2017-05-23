@@ -1,27 +1,40 @@
 {namespace neos=Neos\Neos\ViewHelpers}
 {namespace media=Neos\Media\ViewHelpers}
 <f:if condition="{image}">
-	<f:then>
-		<f:if condition="{link}">
-			<f:then>
-				<a href="{link}">
-					<f:render section="imageRendering" arguments="{_all}" />
-				</a>
-			</f:then>
-			<f:else>
-				<f:render section="imageRendering" arguments="{_all}" />
-			</f:else>
-		</f:if>
-	</f:then>
-	<f:else>
-		<f:if condition="{neos:rendering.inEditMode()}">
-			<img src="{f:uri.resource(package: 'Neos.Neos', path: 'Images/dummy-image.svg')}" title="Dummy image" alt="Dummy image" class="neos-handle" />
-		</f:if>
-	</f:else>
+    <f:then>
+        <f:if condition="{link}">
+            <f:then>
+                <a href="{link}">
+                    <f:render section="imageRendering" arguments="{_all}"/>
+                </a>
+            </f:then>
+            <f:else>
+                <f:render section="imageRendering" arguments="{_all}"/>
+            </f:else>
+        </f:if>
+    </f:then>
+    <f:else>
+        <f:if condition="{neos:rendering.inEditMode()}">
+            <img src="{f:uri.resource(package: 'Neos.Neos', path: 'Images/dummy-image.svg')}" title="Dummy image"
+                 alt="Dummy image" class="neos-handle img-responsive" />
+        </f:if>
+    </f:else>
 </f:if>
 
 <f:section name="imageRendering">
-	<media:image image="{image}" alt="{alternativeText}" title="{title}" width="{width}"
-				 maximumWidth="{maximumWidth}" height="{height}" maximumHeight="{maximumHeight}"
-				 allowUpScaling="{allowUpScaling}" allowCropping="{allowCropping}" />
+    <f:section name="imageRendering">
+        <img src="{media:uri.thumbnail(asset: image, preset: presetLg,
+        allowCropping: allowCropping, allowUpScaling: allowUpScaling)}"
+             title="{title}" alt="{alternativeText}"
+             srcset="{media:uri.thumbnail(asset: image, preset: presetLg,
+        allowCropping: allowCropping, allowUpScaling: allowUpScaling)} 1200w,
+      {media:uri.thumbnail(asset: image, preset: presetSm,
+        allowCropping: allowCropping, allowUpScaling: allowUpScaling)} 940w,
+      {media:uri.thumbnail(asset: image, preset: presetXs,
+        allowCropping: allowCropping, allowUpScaling: allowUpScaling)} 720w,
+      {media:uri.thumbnail(asset: image, preset: presetXxs,
+        allowCropping: allowCropping, allowUpScaling: allowUpScaling)} 450w"
+             sizes="100vw" class="img-responsive"
+        />
+    </f:section>
 </f:section>
