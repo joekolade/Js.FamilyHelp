@@ -84,3 +84,19 @@ prototype(Js.NodeTypes:Startpage.Document) < prototype(Neos.NodeTypes:Page.Docum
 prototype(Neos.NodeTypes:Image) {
     templatePath = 'resource://Js.FamilyHelp/Private/Templates/NodeTypes/Image.html'
 }
+
+
+# Splash
+prototype(Js.FamilyHelp:Splash) < prototype(Neos.NodeTypes:Text) {
+    templatePath = 'resource://Js.FamilyHelp/Private/Templates/NodeTypes/Splash.html'
+    attributes {
+        id = 'splash'
+    }
+}
+
+# TeamBox
+prototype(Js.FamilyHelp:TeamBox) < prototype(Neos.NodeTypes:TextWithImage) {
+    attributes {
+        class = 'teambox'
+    }
+}

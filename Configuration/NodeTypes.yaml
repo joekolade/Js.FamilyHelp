@@ -30,3 +30,20 @@
   childNodes:
     'footer':
       type: 'Neos.Neos:ContentCollection'
+
+
+# Neuer Splash Inhalt
+'Js.FamilyHelp:Splash':
+  superTypes:
+    'Neos.NodeTypes:Text': TRUE
+  ui:
+    label: 'Großer Text (Einleitung)'
+    group: 'general'
+
+# Teambox (Bild neben Text)
+'Js.FamilyHelp:TeamBox':
+  superTypes:
+    'Neos.NodeTypes:TextWithImage': TRUE
+  ui:
+    label: 'Team-Bild mit Text'
+    group: 'general'
