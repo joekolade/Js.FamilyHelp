@@ -22,6 +22,9 @@ $special-font-family: 'JuliusPrimaryStd-Bold';
 body {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+
+  background-position: 100% 0;
+  background-repeat: no-repeat;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
