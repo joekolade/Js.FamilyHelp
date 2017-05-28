@@ -26,6 +26,11 @@ body {
   //background-position: 100% 0;
   background-repeat: no-repeat;
   //background-size: 100% auto;
+
+  @include media-breakpoint-down(sm) {
+    background-image: none !important;
+  }
+
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -50,12 +55,6 @@ body {
   border-top: .05rem solid #e5e5e5;
 }
 
-/* Customize container */
-@media (min-width: 48em) {
-  .container {
-    // max-width: 46rem;
-  }
-}
 .container-narrow > hr {
   margin: 2rem 0;
 }
