@@ -16,6 +16,7 @@
 }
 @include media-breakpoint-up(lg) {
   .header {
-    padding-bottom: .5rem;
+    //padding-bottom: .5rem;
+    padding-bottom: 0;
   }
 }
