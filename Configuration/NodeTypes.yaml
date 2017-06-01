@@ -13,7 +13,7 @@ usedNodeTypes: &usedNodeTypes
   'Neos.NodeTypes:Headline': TRUE
   'Neos.NodeTypes:Text': TRUE
   'Neos.NodeTypes:Image': TRUE
-  #'Neos.NodeTypes:Html': TRUE
+  'Neos.NodeTypes:Html': TRUE
   'Js.FamilyHelp:Splash': TRUE
   'Js.FamilyHelp:TeamBox': TRUE
   'Neos.NodeTypes:TwoColumn': TRUE
