@@ -8,7 +8,23 @@
 #      type: 'Neos.Neos:ContentCollection'
 
 
+
+usedNodeTypes: &usedNodeTypes
+  'Neos.NodeTypes:Headline': TRUE
+  'Neos.NodeTypes:Text': TRUE
+  'Neos.NodeTypes:Image': TRUE
+  #'Neos.NodeTypes:Html': TRUE
+  'Js.FamilyHelp:Splash': TRUE
+  'Js.FamilyHelp:TeamBox': TRUE
+  'Neos.NodeTypes:TwoColumn': TRUE
+  '*': FALSE
+
+
 'Neos.NodeTypes:Page':
+  childNodes:
+    'main':
+      constraints:
+        nodeTypes: *usedNodeTypes
   properties:
     backgroundimage:
       type: 'Neos\Media\Domain\Model\ImageInterface'
@@ -28,6 +44,9 @@
   ui:
     label: 'Homepage'
   childNodes:
+    'main':
+      constraints:
+        nodeTypes: *usedNodeTypes
     'footer':
       type: 'Neos.Neos:ContentCollection'
 
