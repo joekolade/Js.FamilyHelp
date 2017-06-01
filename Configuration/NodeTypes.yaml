@@ -21,6 +21,10 @@ usedNodeTypes: &usedNodeTypes
 
 
 'Neos.NodeTypes:Page':
+  constraints:
+    nodeTypes:
+      'Neos.NodeTypes:Page': TRUE
+      'Neos.NodeTypes:Shortcut': TRUE
   childNodes:
     'main':
       constraints:
@@ -43,6 +47,10 @@ usedNodeTypes: &usedNodeTypes
     'Neos.NodeTypes:Page': TRUE
   ui:
     label: 'Homepage'
+  constraints:
+    nodeTypes:
+      'Neos.NodeTypes:Page': TRUE
+      'Neos.NodeTypes:Shortcut': TRUE
   childNodes:
     'main':
       constraints:
