@@ -25,6 +25,7 @@ usedNodeTypes: &usedNodeTypes
     nodeTypes:
       'Neos.NodeTypes:Page': TRUE
       'Neos.NodeTypes:Shortcut': TRUE
+      '*': FALSE
   childNodes:
     'main':
       constraints:
@@ -51,6 +52,7 @@ usedNodeTypes: &usedNodeTypes
     nodeTypes:
       'Neos.NodeTypes:Page': TRUE
       'Neos.NodeTypes:Shortcut': TRUE
+      '*': FALSE
   childNodes:
     'main':
       constraints:
