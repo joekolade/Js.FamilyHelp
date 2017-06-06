@@ -10,7 +10,6 @@ Neos:
           target: 'Neos\Flow\ResourceManagement\Target\FileSystemSymlinkTarget'
           targetOptions:
             relativeSymlinks: true
-Neos:
   Media:
     thumbnailPresets:
       'Js.FamilyHelp:presetLg':
@@ -25,3 +24,6 @@ Neos:
       'Js.FamilyHelp:presetXxs':
         maximumWidth: 450
         maximumHeight: 300
+  Form:
+    yamlPersistenceManager:
+      savePath: 'resource://Js.FamilyHelp/Private/Form/'

@@ -17,6 +17,7 @@ usedNodeTypes: &usedNodeTypes
   'Js.FamilyHelp:Splash': TRUE
   'Js.FamilyHelp:TeamBox': TRUE
   'Neos.NodeTypes:TwoColumn': TRUE
+  'Neos.NodeTypes:Form': TRUE
   '*': FALSE
 
 
