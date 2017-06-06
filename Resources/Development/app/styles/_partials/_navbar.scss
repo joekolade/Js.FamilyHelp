@@ -2,6 +2,8 @@
 // Navbar
 //
 
+$navbar-item-padding: 1.2rem;
+
 .navbar {
 
   .dropdown-menu {
@@ -9,15 +11,21 @@
     top: 82%;
   }
 
+  text-transform: lowercase;
+  font-weight: bold;
+  font-size: 1.1em;
+
+
 
   @include media-breakpoint-up(lg) {
-    top: 28px;
+    top: 24px;
+    padding-left: 0;
+    margin-left: -$navbar-item-padding;
 
     .navbar-nav > li > a {
       border: $navbar-border-style transparent;
       border-width: $navbar-border-width $navbar-border-width 0 $navbar-border-width;
       margin-left: $navbar-border-width;
-
 
       &.active {
         background: $white;
@@ -25,8 +33,12 @@
         border-color: $fh-blue;
       }
     }
+    .navbar-nav .nav-link {
+      padding-left: $navbar-item-padding;
+      padding-right: $navbar-item-padding;
+    }
   }
   @media screen and (min-width: 1200px) {
-    top: 43px;
+    top: 39px;
   }
 }

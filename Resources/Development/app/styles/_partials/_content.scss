@@ -1,8 +1,7 @@
-
 // _content.scss
 //
 
-h1,h2,h3,h4 {
+h1, h2, h3, h4 {
   margin-top: 1.275em;
   margin-bottom: 0.525em;
 }
@@ -14,6 +13,12 @@ h1 {
   & + h2, & + h3 {
     margin-top: 0;
   }
+}
+
+// Images not too large
+//
+.neos-nodetypes-image {
+  max-width: 73%;
 }
 
 // Columns
