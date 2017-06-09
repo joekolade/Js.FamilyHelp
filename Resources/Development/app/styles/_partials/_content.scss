@@ -21,76 +21,81 @@ h1 {
   max-width: 73%;
 }
 
+
 // Columns
 //
-.neos-nodetypes-twocolumn,
-.neos-nodetypes-threecolumn {
-  display: flex;
-  .column {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
+@include media-breakpoint-up(lg) {
+  .neos-nodetypes-twocolumn,
+  .neos-nodetypes-threecolumn {
+    display: flex;
 
-.neos-nodetypes-twocolumn {
-  &.columns-50-50 .column {
-    width: 50%;
-  }
-
-  &.columns-75-25 {
     .column {
-      width: 75%;
-      &:last-child {
-        width: 25%;
-      }
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 100%;
     }
   }
 
-  &.columns-25-75 {
-    .column {
-      width: 25%;
-      &:last-child {
+  .neos-nodetypes-twocolumn {
+    &.columns-50-50 .column {
+      width: 50%;
+    }
+
+    &.columns-75-25 {
+      .column {
         width: 75%;
+        &:last-child {
+          width: 25%;
+        }
       }
     }
+
+    &.columns-25-75 {
+      .column {
+        width: 25%;
+        &:last-child {
+          width: 75%;
+        }
+      }
+    }
+
+    &.columns-66-33 .column {
+      width: 66%;
+      &:last-child {
+        width: 33%;
+      }
+    }
+    &.columns-33-66 .column {
+      width: 33%;
+      &:last-child {
+        width: 66%;
+      }
+    }
+
   }
 
-  &.columns-66-33 .column {
-    width: 66%;
-    &:last-child {
+  .neos-nodetypes-threecolumn {
+    &.columns-33-33-33 .column {
       width: 33%;
     }
-  }
-  &.columns-33-66 .column {
-    width: 33%;
-    &:last-child {
-      width: 66%;
+    &.columns-50-25-25 .column {
+      width: 25%;
+      &:first-child {
+        width: 50%;
+      }
     }
-  }
+    &.columns-25-50-25 .column {
+      width: 25%;
+      &:nth-child(2) {
+        width: 50%;
+      }
+    }
+    &.columns-25-25-50 .column {
+      width: 25%;
+      &:last-child {
+        width: 50%;
+      }
+    }
 
-}
-
-.neos-nodetypes-threecolumn {
-  &.columns-33-33-33 .column {
-    width: 33%;
   }
-  &.columns-50-25-25 .column {
-    width: 25%;
-    &:first-child {
-      width: 50%;
-    }
-  }
-  &.columns-25-50-25 .column {
-    width: 25%;
-    &:nth-child(2) {
-      width: 50%;
-    }
-  }
-  &.columns-25-25-50 .column {
-    width: 25%;
-    &:last-child {
-      width: 50%;
-    }
-  }
-
 }

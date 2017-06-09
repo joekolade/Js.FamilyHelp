@@ -1,13 +1,20 @@
+#  name
+#  email
+#  Beruf/breufsbezeichnung
+#  Adresse
+#  tel nr
+#  Nachricht / Kurstitel / kursdatum
+
 type: 'Neos.Form:Form'
 identifier: contact-form
 label: Kontakt / Anmeldung
 renderingOptions:
-  submitButtonLabel: Send
+  submitButtonLabel: Senden
 renderables:
   -
     type: 'Neos.Form:Page'
     identifier: page-one
-    label: Contact
+    label: Kontakt / Anmeldung
     renderables:
       -
         type: 'Neos.Form:SingleLineText'
@@ -29,29 +36,52 @@ renderables:
           placeholder: 'E-Mail'
         defaultValue: ''
       -
+        type: 'Neos.Form:SingleLineText'
+        identifier: phone
+        label: Telefonnummer
+        properties:
+          placeholder: 'Ihre Telefonnummer'
+        defaultValue: ''
+      -
+        type: 'Neos.Form:SingleLineText'
+        identifier: job
+        label: Berufsbezeichnung
+        properties:
+          placeholder: 'Berufsbezeichnung'
+        defaultValue: ''
+      -
+        type: 'Neos.Form:MultiLineText'
+        identifier: address
+        label: Adresse
+        properties:
+          placeholder: 'Ihre Adresse'
+          rows: 3
+        defaultValue: ''
+      -
         type: 'Neos.Form:MultiLineText'
         identifier: message
-        label: Message
+        label: Nachricht / Kursbezeichnung
         validators:
           - identifier: 'Neos.Flow:NotEmpty'
         properties:
-          placeholder: 'Your Message'
+          placeholder: 'Ihre Nachricht / Kursdaten zur Anmeldung'
+          rows: 6
         defaultValue: ''
 finishers:
   -
     identifier: 'Neos.Form:Email'
     options:
-      templatePathAndFilename: resource://Vendor.Site/Private/Templates/Email/Message.txt
-      subject: Contact from example.net
-      recipientAddress: office@example.net
-      recipientName: 'Office of Company'
-      senderAddress: server@example.net
-      senderName: Server example.net
-      replyToAddress: office@example.net
+      templatePathAndFilename: resource://Js.FamilyHelp/Private/Templates/Email/Message.txt
+      subject: Kontakt von www.family-help.ch
+      recipientAddress: j.kolade@gmail.com
+      recipientName: 'verein family help'
+      senderAddress: server@family-help.ch
+      senderName: Webseite family-help
+      #replyToAddress: office@example.net
       format: plaintext
   -
     identifier: 'Neos.Form:Confirmation'
     options:
       message: >
-        <h3>Thank you for your feedback</h3>
-        <p>We will process it as soon as possible.</p>
+        <h3>Vielen Dank</h3>
+        <p>Ihre Nachricht wurde versandt.</p>
