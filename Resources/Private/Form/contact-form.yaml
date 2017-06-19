@@ -73,11 +73,14 @@ finishers:
     options:
       templatePathAndFilename: resource://Js.FamilyHelp/Private/Templates/Email/Message.txt
       subject: Kontakt von www.family-help.ch
+      #recipientAddress: info@family-help.ch
       recipientAddress: j.kolade@gmail.com
-      recipientName: 'verein family help'
-      senderAddress: formular@family-help.ch
-      senderName: Webseite family-help
+      recipientName: 'Verein family help'
+      senderAddress: noreply@family-help.ch
+      senderName: Kontaktformular (www.family-help.ch)
+      senderName: '{name}'
       #replyToAddress: office@example.net
+      replyToAddress: '{email}'
       format: plaintext
   -
     identifier: 'Neos.Form:Confirmation'
