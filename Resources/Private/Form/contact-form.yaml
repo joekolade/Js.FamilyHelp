@@ -73,12 +73,12 @@ finishers:
     options:
       templatePathAndFilename: resource://Js.FamilyHelp/Private/Templates/Email/Message.txt
       subject: Kontakt von www.family-help.ch
-      #recipientAddress: info@family-help.ch
-      recipientAddress: j.kolade@gmail.com
+      recipientAddress: info@family-help.ch
+      #recipientAddress: j.kolade@gmail.com
       recipientName: 'Verein family help'
       senderAddress: noreply@family-help.ch
-      senderName: Kontaktformular (www.family-help.ch)
-      senderName: '{name}'
+      #senderName: Kontaktformular (www.family-help.ch)
+      senderName: 'Kontaktformular (www.family-help.ch): {name}'
       #replyToAddress: office@example.net
       replyToAddress: '{email}'
       format: plaintext

@@ -8,7 +8,9 @@ Der Inhalt war folgender:
   {label}: {value}
 </f:for>
 
+
 ---
 
-Bitte antworten Sie nicht direkt auf diese E-Mail!
 Diese E-Mail wurde automatisch generiert.
+
+Sie können direkt antworten, die E-Mail geht dann an den Absender des Formulars.
