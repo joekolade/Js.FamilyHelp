@@ -83,5 +83,7 @@ finishers:
     identifier: 'Neos.Form:Confirmation'
     options:
       message: >
-        <h3>Vielen Dank</h3>
-        <p>Ihre Nachricht wurde versandt.</p>
+        <h3>Vielen Dank für Ihre Nachricht</h3>
+        <p>Ihre Nachricht wurde an uns versandt.</p>
+        <p>Wir werden diese schnellst möglich bearbeiten.</p>
+        <p><br>Ihre Verein family-help</p>
