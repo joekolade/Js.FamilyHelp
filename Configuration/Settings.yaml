@@ -27,3 +27,10 @@ Neos:
   Form:
     yamlPersistenceManager:
       savePath: 'resource://Js.FamilyHelp/Private/Form/'
+
+    presets:
+      default:
+        formElementTypes:
+          'Neos.Form:Base':
+            renderingOptions:
+              translationPackage: 'Js.FamilyHelp'
