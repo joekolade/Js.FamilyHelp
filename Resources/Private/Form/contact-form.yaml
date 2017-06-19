@@ -75,7 +75,7 @@ finishers:
       subject: Kontakt von www.family-help.ch
       recipientAddress: j.kolade@gmail.com
       recipientName: 'verein family help'
-      senderAddress: server@family-help.ch
+      senderAddress: formular@family-help.ch
       senderName: Webseite family-help
       #replyToAddress: office@example.net
       format: plaintext

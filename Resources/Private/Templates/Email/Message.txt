@@ -1,7 +1,14 @@
-Hello,
+Hallo Verein family-help,
+
+Das Kontaktformular auf der Webseite http://www.family-help.ch/ wurde soeben an Sie versandt.
+
+Der Inhalt war folgender:
 
 <f:for each="{form.formState.formValues}" as="value" key="label">
   {label}: {value}
 </f:for>
 
-Thanks
+---
+
+Bitte antworten Sie nicht direkt auf diese E-Mail!
+Diese E-Mail wurde automatisch generiert.
