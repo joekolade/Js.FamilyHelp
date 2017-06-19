@@ -1,4 +1,10 @@
 Neos:
+  ContentRepository:
+    contentDimensions:
+      language:
+        label: Language
+        icon: icon-language
+        default: de
   Flow:
     resource:
       targets:
