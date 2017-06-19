@@ -1,11 +1,7 @@
 Neos:
-  ContentRepository:
-    contentDimensions:
-      language:
-        label: Language
-        icon: icon-language
-        default: de
   Flow:
+    i18n:
+      defaultLocale: de
     resource:
       targets:
         localWebDirectoryPersistentResourcesTarget:
