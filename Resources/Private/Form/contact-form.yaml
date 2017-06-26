@@ -82,7 +82,7 @@ finishers:
     options:
       templatePathAndFilename: resource://Js.FamilyHelp/Private/Templates/Email/Message.txt
       subject: Kontakt von www.family-help.ch
-      recipientAddress: info@family-help.ch
+      recipientAddress: sekretariat@family-help.ch
       #recipientAddress: j.kolade@gmail.com
       recipientName: 'Verein family help'
       senderAddress: noreply@family-help.ch
