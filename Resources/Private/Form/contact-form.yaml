@@ -27,6 +27,15 @@ renderables:
         defaultValue: ''
       -
         type: 'Neos.Form:SingleLineText'
+        identifier: vorname
+        label: Voname
+        validators:
+          - identifier: 'Neos.Flow:NotEmpty'
+        properties:
+          placeholder: Vorname
+        defaultValue: ''
+      -
+        type: 'Neos.Form:SingleLineText'
         identifier: email
         label: E-Mail
         validators:
@@ -89,4 +98,4 @@ finishers:
         <h3>Vielen Dank für Ihre Nachricht</h3>
         <p>Ihre Nachricht wurde an uns versandt.</p>
         <p>Wir werden diese schnellst möglich bearbeiten.</p>
-        <p><br>Ihre Verein family-help</p>
+        <p><br>Sekretariat und Team Verein family-help</p>
