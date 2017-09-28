@@ -1,23 +1,26 @@
 {
-  "description": "",
-  "type": "neos-site",
-  "require": {
-    "neos/neos": "*",
-    "neos/nodetypes": "*",
-    "neos/swiftmailer": "^6.0"
-  },
-  "suggest": {
-    "neos/seo": "*"
-  },
-  "name": "js/familyhelp",
-  "autoload": {
-    "psr-4": {
-      "Js\\FamilyHelp\\": "Classes/"
+    "description": "",
+    "type": "neos-site",
+    "require": {
+        "neos/neos": "*",
+        "neos/nodetypes": "*",
+        "neos/swiftmailer": "^6.0"
+    },
+    "suggest": {
+        "neos/seo": "*"
+    },
+    "name": "js/familyhelp",
+    "autoload": {
+        "psr-4": {
+            "Js\\FamilyHelp\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Js.FamilyHelp"
+        },
+        "applied-flow-migrations": [
+            "TYPO3.FLOW3-201201261636"
+        ]
     }
-  },
-  "extra": {
-    "neos": {
-      "package-key": "Js.FamilyHelp"
-    }
-  }
 }
