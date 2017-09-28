@@ -3,8 +3,7 @@
     "type": "neos-site",
     "require": {
         "neos/neos": "*",
-        "neos/nodetypes": "*",
-        "neos/swiftmailer": "^6.0"
+        "neos/nodetypes": "*"
     },
     "suggest": {
         "neos/seo": "*"
