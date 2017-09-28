@@ -77,3 +77,6 @@ usedNodeTypes: &usedNodeTypes
   ui:
     label: 'Team-Bild mit Text'
     group: 'general'
+
+# No "form" from Neos.NodeTypes
+'Neos.NodeTypes:Form': ~
