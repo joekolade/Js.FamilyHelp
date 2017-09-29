@@ -79,4 +79,4 @@ usedNodeTypes: &usedNodeTypes
     group: 'general'
 
 # No "form" from Neos.NodeTypes
-#'Neos.NodeTypes:Form': ~
+'Neos.NodeTypes:Form': ~
