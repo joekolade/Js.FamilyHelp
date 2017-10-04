@@ -18,7 +18,7 @@ prototype(Neos.NodeTypes:Page.Document) < prototype(Neos.Neos:Page) {
     }
     bodyTag {
         attributes.style.@process.backgroundImage = ${value + ' ' + 'background-image: url(' + imageUri + ');'}
-        attributes.style.@process.backgroundImage.@if.backgroundImageIsSet = ${ q(node).property('backgroundimage') == '' ? false : true }
+        attributes.style.@process.backgroundImage.@if.backgroundImageIsSet = ${q(node).property('backgroundimage') == '' ? false : true}
     }
 
     head {
@@ -102,4 +102,8 @@ prototype(Js.FamilyHelp:TeamBox) < prototype(Neos.NodeTypes:TextWithImage) {
 }
 
 # Form
-# templatePathAndFilename: resource://Js.FamilyHelp/Private/Templates/Email/Message.txt
+prototype(Neos.Form.Builder:EmailFinisher.Definition) {
+    options {
+        templatePathAndFilename = 'resource://Js.FamilyHelp/Private/Templates/Email/Message.txt'
+    }
+}
