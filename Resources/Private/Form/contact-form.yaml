@@ -28,7 +28,7 @@ renderables:
       -
         type: 'Neos.Form:SingleLineText'
         identifier: vorname
-        label: Voname
+        label: Vorname
         validators:
           - identifier: 'Neos.Flow:NotEmpty'
         properties:

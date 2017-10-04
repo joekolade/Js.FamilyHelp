@@ -100,3 +100,6 @@ prototype(Js.FamilyHelp:TeamBox) < prototype(Neos.NodeTypes:TextWithImage) {
         class = 'teambox'
     }
 }
+
+# Form
+# templatePathAndFilename: resource://Js.FamilyHelp/Private/Templates/Email/Message.txt

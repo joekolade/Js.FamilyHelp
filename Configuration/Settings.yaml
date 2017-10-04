@@ -26,6 +26,6 @@ Neos:
       'Js.FamilyHelp:presetXxs':
         maximumWidth: 450
         maximumHeight: 300
-#  Form:
-#    yamlPersistenceManager:
-#      savePath: 'resource://Js.FamilyHelp/Private/Form/'
+  Form:
+    yamlPersistenceManager:
+      savePath: 'resource://Js.FamilyHelp/Private/Form/'
